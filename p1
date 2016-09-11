@@ -1,0 +1,98 @@
+***************************************************************************
+//
+// Author:            Your Name
+// Class:             FALL-2016, CMPSC201, SEC-050
+// Date Due:          2016-09-14
+// Assignment Week:   Week3
+// Description:       Explore Math functions with Trigonometric functions
+//
+//
+//*****************************************************************************
+
+// Included Header Files ------------------------------------------------------
+#include <iostream>   // Needed for cout
+#include <iomanip>    // Needed for formatted output
+#include <cmath>      // Needed for trig functions
+#include <string>
+#include <fstream>
+#include <cstdlib>
+#include <cstdio>
+
+// Namespace ------------------------------------------------------------------
+using namespace std;
+
+// Function Prototypes---------------------------------------------------------
+// This section will be blank until Chapter 6 is covered
+
+// MAIN Function --------------------------------------------------------------
+int main(int argc, char *argv[])
+{
+   // Declare all variable for this program here!
+   double x = 0.5, e = 2.7182818;
+   double sinh = 0;
+   double cosh = 0;
+   double asinh = 0;
+   double atanh = 0;
+   double diff1 = 0, diff2, diff3, diff4;
+
+   cout << "+----------------------------------------------------------- \n";
+   cout << "|\tTRIG Functions\n";
+   cout << "|\tWEEK 3\n";
+   cout << "+----------------------------------------------------------- \n" << endl;
+   cout << "|Program Description: " << endl;
+   cout << "|    \n";
+   cout << "|    \n";
+   cout << "+----------------------------------------------------------- \n";
+   cout << "| Author: NAME HERE  \n";
+   cout << "+----------------------------------------------------------- \n";
+   // Compute Built in Functions
+   
+   
+   // Compute the Identity Version for sinh
+   cout << "---sinh(x)--- For x = 0.50" << endl;
+   cout << "BUILT-IN VERSION: " << sinh << endl;
+   cout << "IDENTITY VERSION: " << sinh << endl;
+   cout << "DIFF: " << diff << endl;
+   
+   // Compute the Identity Version for cosh
+
+   
+   // Compute the Identity Version for asinh
+
+   
+   // Compute the Identity Version for atanh
+
+ 
+   // Compute the difference between Built In Function Result and Identity Result
+   
+   
+   // Output Results to display using cout statements
+   cout << "---sinh(x)--- For x = 0.50" << endl;
+   cout << "BUILT-IN VERSION: " << sinh << endl;
+   cout << "IDENTITY VERSION: " << sinh << endl;
+   cout << "DIFF: " << diff1 << endl;
+   cout << endl << endl;
+   cout << "---cosh(x)--- For x = 0.50" << endl;
+   cout << "BUILT-IN VERSION: " << cosh << endl;
+   cout << "IDENTITY VERSION: " << cosh << endl;
+   cout << "DIFF: " << diff2 << endl;
+   cout << endl << endl;
+   cout << "---asinh(x)--- For x = 0.50" << endl;
+   cout << "BUILT-IN VERSION: " << asinh << endl;
+   cout << "IDENTITY VERSION: " << asinh << endl;
+   cout << "DIFF: " << diff3 << endl;
+   cout << endl << endl;
+   cout << "---atanh(x)--- For x = 0.50" << endl;
+   cout << "BUILT-IN VERSION: " << atanh << endl;
+   cout << "IDENTITY VERSION: " << atanh << endl;
+   cout << "DIFF: " << diff4 << endl;
+
+   // ------------------------------------------------------------------------
+   cout << "\n\nPROGRAM DONE !!!\n" << endl;
+   
+   return 0;
+}
+
+
+   
+
