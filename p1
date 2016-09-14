@@ -1,4 +1,4 @@
-***************************************************************************
+//***************************************************************************
 //
 // Author:            Your Name
 // Class:             FALL-2016, CMPSC201, SEC-050
@@ -27,69 +27,70 @@ using namespace std;
 // MAIN Function --------------------------------------------------------------
 int main(int argc, char *argv[])
 {
-   // Declare all variable for this program here!
-   double x = 0.5, e = 2.7182818;
-   double sinh = 0;
-   double cosh = 0;
-   double asinh = 0;
-   double atanh = 0;
-   double diff1 = 0, diff2, diff3, diff4;
+	// Declare all variable for this program here!
+	double x = 0.5, e = 2.7182818;
+	double i_sinh = 0, b_sinh;
+	double i_cosh = 0, b_cosh;
+	double i_asinh = 0, b_asinh;
+	double i_atanh = 0, b_atanh;
+	double diff1 = 0, diff2 =0, diff3=0, diff4=0;
 
-   cout << "+----------------------------------------------------------- \n";
-   cout << "|\tTRIG Functions\n";
-   cout << "|\tWEEK 3\n";
-   cout << "+----------------------------------------------------------- \n" << endl;
-   cout << "|Program Description: " << endl;
-   cout << "|    \n";
-   cout << "|    \n";
-   cout << "+----------------------------------------------------------- \n";
-   cout << "| Author: NAME HERE  \n";
-   cout << "+----------------------------------------------------------- \n";
-   // Compute Built in Functions
-   
-   
-   // Compute the Identity Version for sinh
+	cout << "+----------------------------------------------------------- \n";
+	cout << "|\tTRIG Functions                                            \n";
+	cout << "|\tWEEK 3                                                    \n";
+	cout << "+----------------------------------------------------------- \n" << endl;
+	cout << "|Program Description:                                          " << endl;
+	cout << "|                                                            \n";
+	cout << "|                                                            \n";
+	cout << "+----------------------------------------------------------- \n";
+	cout << "| Author: NAME HERE                                          \n";
+	cout << "+----------------------------------------------------------- \n";
+	// Computes the Identity Version for sinh
+	i_sinh = (exp(x) - exp(-x)) / 2;
 
-   
-   // Compute the Identity Version for cosh
+	// Computes the Identity Version for cosh
+	i_cosh = (exp(x) + exp(-x)) / 2;
 
-   
-   // Compute the Identity Version for asinh
+	// Computes the Identity Version for asinh
+	i_asinh = (log(x + sqrt(pow(x, 2) + 1)));
 
-   
-   // Compute the Identity Version for atanh
+	// Computes the Identity Version for atanh
+	i_atanh = log((1 + x) / (1 - x)) / 2;
 
- 
-   // Compute the difference between Built In Function Result and Identity Result
-   
-   
-   // Output Results to display using cout statements
-   cout << "---sinh(x)--- For x = 0.50" << endl;
-   cout << "BUILT-IN VERSION: " << sinh << endl;
-   cout << "IDENTITY VERSION: " << sinh << endl;
-   cout << "DIFF: " << diff1 << endl;
-   cout << endl << endl;
-   cout << "---cosh(x)--- For x = 0.50" << endl;
-   cout << "BUILT-IN VERSION: " << cosh << endl;
-   cout << "IDENTITY VERSION: " << cosh << endl;
-   cout << "DIFF: " << diff2 << endl;
-   cout << endl << endl;
-   cout << "---asinh(x)--- For x = 0.50" << endl;
-   cout << "BUILT-IN VERSION: " << asinh << endl;
-   cout << "IDENTITY VERSION: " << asinh << endl;
-   cout << "DIFF: " << diff3 << endl;
-   cout << endl << endl;
-   cout << "---atanh(x)--- For x = 0.50" << endl;
-   cout << "BUILT-IN VERSION: " << atanh << endl;
-   cout << "IDENTITY VERSION: " << atanh << endl;
-   cout << "DIFF: " << diff4 << endl;
+	// Compute the difference between Built In Function Result and Identity Result
+	b_sinh = sinh(x);
+	b_cosh = cosh(x);
+	b_asinh = asinh(x);
+	b_atanh = atanh(x);
 
-   // ------------------------------------------------------------------------
-   cout << "\n\nPROGRAM DONE !!!\n" << endl;
-   
-   return 0;
+	diff1 = i_sinh - b_sinh;
+	diff2 = i_cosh - b_cosh;
+	diff3 = i_asinh - b_asinh;
+	diff4 = i_atanh - b_atanh;
+
+	// Output Results to display using cout statements
+	cout << "---sinh(x)--- For x = 0.50" << endl;
+	cout << "BUILT-IN VERSION: " << b_sinh << endl;
+	cout << "IDENTITY VERSION: " << i_sinh << endl;
+	cout << "DIFF: " << diff1 << endl;
+	cout << endl << endl;
+	cout << "---cosh(x)--- For x = 0.50" << endl;
+	cout << "BUILT-IN VERSION: " << b_cosh << endl;
+	cout << "IDENTITY VERSION: " << i_cosh << endl;
+	cout << "DIFF: " << diff2 << endl;
+	cout << endl << endl;
+	cout << "---asinh(x)--- For x = 0.50" << endl;
+	cout << "BUILT-IN VERSION: " << b_asinh << endl;
+	cout << "IDENTITY VERSION: " << i_asinh << endl;
+	cout << "DIFF: " << diff3 << endl;
+	cout << endl << endl;
+	cout << "---atanh(x)--- For x = 0.50" << endl;
+	cout << "BUILT-IN VERSION: " << b_atanh << endl;
+	cout << "IDENTITY VERSION: " << i_atanh << endl;
+	cout << "DIFF: " << diff4 << endl;
+
+	// ------------------------------------------------------------------------
+	cout << "\n\nPROGRAM DONE !!!\n" << endl;
+
+	return 0;
 }
-
-
-   
-
