@@ -28,7 +28,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
 	// Declare all variable for this program here!
-	double x = 0.5, e = 2.7182818;
+	double x = 0.5;
 	double i_sinh = 0, b_sinh;
 	double i_cosh = 0, b_cosh;
 	double i_asinh = 0, b_asinh;
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	cout << "|                                                            \n";
 	cout << "+----------------------------------------------------------- \n";
 	cout << "| Author: NAME HERE                                          \n";
-	cout << "+----------------------------------------------------------- \n";
+	cout << "+----------------------------------------------------------- \n" << endl;
 	// Computes the Identity Version for sinh
 	i_sinh = (exp(x) - exp(-x)) / 2;
 
